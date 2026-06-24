@@ -1,0 +1,40 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+*.pyc
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+venv/
+env/
+
+# Environment variables (contains API keys — never commit this)
+.env
+.env.*
+
+# uv
+.python-version
+
+# Data / cache files (generated at runtime)
+data/image_cache.json
+data/*.html
+data/*.log
+
+# FAISS index and embeddings (large binary files, regenerate locally)
+embedding/*.index
+embedding/*.pkl
+embedding/*.npy
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
