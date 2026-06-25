@@ -1,6 +1,9 @@
 import streamlit as st
 import requests
 import json
+import os
+
+BACKEND_URL = os.getenv("BACKEND_URL", "http://127.0.0.1:8001")
 
 # Configure page settings
 st.set_page_config(page_title="Shop Assistant", layout="wide")
@@ -300,7 +303,7 @@ def send_query_to_bot(query_text):
     if not query_text.strip():
         return
     try:
-        res = requests.post("http://127.0.0.1:8001/chat", json={
+        res = requests.post(f"{BACKEND_URL}/chat", json={
             "query": query_text,
             "history": st.session_state.chat_history,
             "brand": st.session_state.get("selected_brand", "All"),
@@ -398,7 +401,7 @@ st.markdown("""
 
 # Fetch product data from backend
 try:
-    response = requests.get("http://127.0.0.1:8001/products")
+    response = requests.get(f"{BACKEND_URL}/products")
     products = response.json()
 
     if not products:
