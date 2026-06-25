@@ -13,7 +13,7 @@ An AI-powered smart shopping catalog with a conversational chatbot (RAG) to help
 - **Google Images Link** — One-click search for any product's real images.
 - **Premium UI** — Dark glassmorphic design built with Streamlit and styled with modern fonts.
 ---
-## 🗂️ Project Structure
+## Project Structure
 ```text
 ShopAssistantChatbot/
 ├── backend/            # FastAPI server (chat + products API)
