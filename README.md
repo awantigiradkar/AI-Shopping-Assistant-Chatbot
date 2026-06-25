@@ -1,6 +1,9 @@
 # Shop Assistant Chatbot
 An AI-powered smart shopping catalog with a conversational chatbot (RAG) to help users discover and explore footwear products. Powered by FastAPI, Streamlit, Pinecone Vector Database, Google Gemini, and MySQL.
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ai-shopping-assistant-chatbot.streamlit.app/)
+
+---
+## Live Application Links
+* **Direct Application**: [https://ai-shopping-assistant-chatbot.streamlit.app/]
 ---
 ## Features
 - **Product Catalog** — Browse a curated footwear catalog with filters by brand, gender, and price.
