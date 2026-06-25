@@ -1,5 +1,6 @@
 # Shop Assistant Chatbot
 An AI-powered smart shopping catalog with a conversational chatbot (RAG) to help users discover and explore footwear products. Powered by FastAPI, Streamlit, Pinecone Vector Database, Google Gemini, and MySQL.
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ai-shopping-assistant-chatbot.streamlit.app/)
 ---
 ## Features
 - **Product Catalog** — Browse a curated footwear catalog with filters by brand, gender, and price.
@@ -160,22 +161,6 @@ uv pip install -r requirements.txt
 ```bash
 uv run uvicorn backend.main:app --host 0.0.0.0 --port 10000
 ```
-
-### Environment Variables
-
-Configure the following production environment variables in Render:
-
-- `GOOGLE_API_KEY`
-- `PINECONE_API_KEY`
-- `DB_HOST`
-- `DB_PORT`
-- `DB_USER`
-- `DB_PASSWORD`
-- `DB_DATABASE`
-
-Use your Aiven MySQL connection credentials for the database-related variables.
-
----
 
 ## Streamlit Cloud Configuration
 
